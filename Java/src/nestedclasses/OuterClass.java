@@ -29,6 +29,7 @@ public class OuterClass
 	{
 		OuterClass obj=new OuterClass();
 		obj.demo();
+		obj.show();
 	}
 
 }
