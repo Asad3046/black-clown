@@ -15,7 +15,6 @@ public class Exceptest
 		Exceptest obj = new Exceptest();
 		System.out.println("Main method");
 		obj.test();
-		System.out.println("End of the Main");
 	}
 
 }
