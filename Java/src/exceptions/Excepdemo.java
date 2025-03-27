@@ -2,17 +2,15 @@ package exceptions;
 
 public class Excepdemo
 {
-	int number;
-	int quotient = 100;
-	void divide(int number)
+	int number = 100;
+	void divide(int i)
 	{
-		try 
-		{
-		System.out.println("divide");
-		quotient = quotient/number;
-		System.out.println(quotient);
-		System.out.println("Java");
-		}catch(Exception e) {System.out.println(e);}
+		try {
+		System.out.println("divide method");
+		number = number/i; //ArithmeticException
+		System.out.println(number);   //Vanished code
+		System.out.println("Java");   //Vanished code
+		} catch (ArithmeticException e) {System.out.println(e);}
 	}
 	public static void main(String[] args)
 	{
