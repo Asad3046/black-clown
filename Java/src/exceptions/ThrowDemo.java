@@ -3,12 +3,12 @@ package exceptions;
 public class ThrowDemo
 {
 	int number = 100;
-	void show(int i) throws ArithmeticException
+	void show(int i)
 	{
 		System.out.println("show method");
 		if(i==0)
 		{
-			throw new ArithmeticException("passed argument can't be zero");
+			throw new ArithmeticException("passed argument can't be zero"); //raised an ArithmeticException with a message
 		}
 		else
 		{
@@ -22,7 +22,8 @@ public class ThrowDemo
 		ThrowDemo obj = new ThrowDemo();
 			try {
 				obj.show(0);
-			} catch (ArithmeticException e) {e.printStackTrace();}
+			} catch (ArithmeticException e) {System.out.println(e);}
+			System.out.println("End of the Main");
 	}
 
 }
