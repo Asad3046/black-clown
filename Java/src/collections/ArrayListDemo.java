@@ -1,7 +1,6 @@
 package collections;
 
 import java.util.ArrayList;
-import java.util.ListIterator;
 
 public class ArrayListDemo
 {
@@ -24,12 +23,12 @@ public class ArrayListDemo
 		alOne.add(4);
 		
 		al.addAll(2, alOne);
-		Object[] arr = al.toArray();
+		Object[] o = al.toArray();
 		int value;
 		
-		for(Object arrO : arr)
+		for(Object i : o)
 		{
-			Integer num = (Integer)arrO;
+			Integer num = (Integer)i;
 			value = num.intValue(); //
 			value = value + 100;
 			System.out.println(value);
